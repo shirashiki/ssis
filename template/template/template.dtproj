@@ -23,6 +23,11 @@
           <FullPath>master_dev.dtsx</FullPath>
           <References />
         </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>master_prod.dtsx</Name>
+          <FullPath>master_prod.dtsx</FullPath>
+          <References />
+        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>
