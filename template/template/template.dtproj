@@ -19,8 +19,8 @@
           <References />
         </DtsPackage>
         <DtsPackage FormatVersion="8">
-          <Name>master.dtsx</Name>
-          <FullPath>master.dtsx</FullPath>
+          <Name>master_dev.dtsx</Name>
+          <FullPath>master_dev.dtsx</FullPath>
           <References />
         </DtsPackage>
       </DTSPackages>
