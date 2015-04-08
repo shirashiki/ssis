@@ -13,8 +13,8 @@
   DTS:ObjectName="sql_auth"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{005069D7-4FF1-4BA6-864E-BD9BAE071A5A}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{7CD083FD-2570-4607-B1B5-1E6039DCC8DB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
