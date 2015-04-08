@@ -28,6 +28,11 @@
           <FullPath>master_prod.dtsx</FullPath>
           <References />
         </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>security_test_pass_is_banana.dtsx</Name>
+          <FullPath>security_test_pass_is_banana.dtsx</FullPath>
+          <References />
+        </DtsPackage>
       </DTSPackages>
     </Manifest>
   </DeploymentModelSpecificContent>

@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "template", "template\template.dtproj", "{EF353E5B-BC24-4D23-917F-3F13C605CD76}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{3CEC0612-463C-42E7-863F-BA6133F325A0}"
+	ProjectSection(SolutionItems) = preProject
+		template\scripts\copy-ssispackages.bat = template\scripts\copy-ssispackages.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default

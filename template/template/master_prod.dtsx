@@ -13,8 +13,8 @@
   DTS:ObjectName="master_prod"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{9BBC1204-1924-4728-B4C0-83414A42D257}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{B749CD0D-A27C-4918-AB43-474C0A06D15F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -100,7 +100,7 @@
         <NodeLayout
           Size="121,42"
           Id="Package\sql_auth"
-          TopLeft="206,89" />
+          TopLeft="209,111" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
