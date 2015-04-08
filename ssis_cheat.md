@@ -21,7 +21,7 @@ In this mode, user and password are part of the connection string. Steps:
 
 ### Deploy a package to SQL Server, MSDB
 
-In this example, we deploy the package in MSDB, under folder "integration".
+In this example, we deploy the package in MSDB, under folder "integration". The package has security EncryptAllWithPassword, and the password is "banana".
 
 ```
 REM deploys a package with password
