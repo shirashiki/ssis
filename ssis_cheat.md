@@ -2,6 +2,23 @@
 
 ## How to...
 
+### Declare a Database Connection in SQL Server Authentication mode
+
+In this mode, user and password are part of the connection string. Steps:
+- Package has security mode DontSaveSensitive
+- Create a variable to store the connection string.
+- Copy the connection string to this variable. SSIS will generate a connection string without the password.
+- Create a variable to store the password, assign the password to its value
+- In the connection, create expressions to substitute the ConnectionString and Password properties with the variable values.
+
+
+*Notes*
+- The password will be visible when you browse the variable values in SSDT.
+- you can supply values throught package configurations (file, database, parent package).
+- See the template project, package sql_auth.dtsx for a usage example.
+
+
+
 ### Deploy a package to SQL Server, MSDB
 
 In this example, we deploy the package in MSDB, under folder "integration".
