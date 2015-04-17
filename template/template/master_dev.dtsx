@@ -12,8 +12,8 @@
   DTS:ObjectName="master_dev"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{C06001ED-4B3B-45EC-8D5B-8C445739187F}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{A8A799E2-E916-40AC-B93E-23C9391EA632}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -22,6 +22,8 @@
       DTS:CreationName="FILE"
       DTS:DTSID="{16DA486B-B284-40B1-962E-5E6A9FF95745}"
       DTS:ObjectName="sql_auth.dtsx">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::package_path] + "sql_auth.dtsx"</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\dev\github\ssis\template\template\sql_auth.dtsx" />
@@ -55,6 +57,15 @@
       DTS:ObjectName="dbsource_conn">
       <DTS:VariableValue
         DTS:DataType="8">Data Source=localhost;Initial Catalog=AdventureWorks2014;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EA333476-6DAF-4C38-8B2C-1CC1D8814396}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="package_path">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\dev\github\ssis\template\template\</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
