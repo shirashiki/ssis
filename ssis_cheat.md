@@ -2,6 +2,25 @@
 
 ## How to...
 
+### Make packages portable
+
+Portable here means you can create a solution in a way other developers can open and change in their workstations with minimal pain.
+
+#### Prevent broken file connections
+You created a file connection pointing to c:\work\solutions\invoice.csv, but this path will probably not exist in another developer workstation or in other environments (QA, Production, etc), preventing your package running.
+
+*Steps:*
+- Create a variable in package scope to hold the folder path, for example, package_path.
+- In the file connection, go to Expressions. Create an expression building the complete file path using the variable and file name, and assigning to the ConnectionString property of the connection.
+```
+@[User::package_path] + "sql_auth.dtsx"
+```
+- When moving to other environments, or if a colleague is maintaining your project, just change the value of the package_path variable.
+
+*Example:*
+- See package master_dev.dtsx, connection sql_auth.dtsx.
+
+
 ### Declare a Database Connection in SQL Server Authentication mode
 
 In this mode, user and password are part of the connection string. Steps:
