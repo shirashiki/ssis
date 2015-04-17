@@ -13,8 +13,8 @@
   DTS:ObjectName="master_prod"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{B749CD0D-A27C-4918-AB43-474C0A06D15F}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{B5392337-06B6-4C3B-B401-4F033B61A01A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
